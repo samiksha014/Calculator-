@@ -161,13 +161,13 @@ class mixedfraction extends calculator{
 		int reminder;
 		
 		
-		result = mixed.common_divisor(7,0);
+		result = mixed.common_divisor(7,3);
 		common_num = mixed.common_numerator(7,result);
-		common_deno = mixed.common_denominator(0,result);
+		common_deno = mixed.common_denominator(3,result);
 		quotient = mixed.fraction(common_num,common_deno);     //quotient
 		reminder = mixed.result(common_num,common_deno);       //reminder
 		
-		System.out.println(mixed.ntostring(7,0));		
+		System.out.println(mixed.ntostring(7,3));		
 		System.out.println(mixed.tostring(common_num , common_deno));
 		System.out.println(mixed.mytostring(quotient,reminder,common_deno));	
 	
